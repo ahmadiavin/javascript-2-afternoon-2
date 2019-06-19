@@ -88,16 +88,19 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Write a function named evenFinder that is given nums as it's only argument.
   Return an array that contains the even numbers from the nums array.
 */
-var evenNums =[];
 
-function evenFinder(nums) {
-  for(var i = 0; i < nums.length; i++) {
-    if (nums[i] % 2 === 0) {
-       evenNums.push(nums[i]);
-    }
-      return evenNums[]
-  }
-}
+// var evenNums =[];
+
+// function evenFinder(nums) {
+//   for(var i = 0; i < nums.length; i++) {
+//     if (nums[i] % 2 === 0) {
+//        evenNums.push(nums[i]);
+//     }
+//   }
+// }
+
+
+evenFinder = nums => nums.filter(e => e % 2 === 0);
 
 
 
@@ -127,6 +130,21 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+var divider = function(numbersArray) {
+  for (var i = 0; i < numbersArray.length; i++) {
+
+      if ((numbersArray[i] % 2) != 1) {
+          evens.push(numbersArray[i]);
+      }
+      else {
+          odds.push(numbersArray[i]);
+              
+      }
+  }
+
+};
+
+divider(numbersArray);
 
 
 
